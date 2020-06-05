@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body bgcolor="#474e5d">
+
+<h2>Academic</h2>
+
+<button class="accordion">Academic Program</button>
+<div class="panel">
+  <p><b>Academic Program</b>
+     Creative Passion School follow a set sequence of fourteen years of schooling, starting with one year of nursery (4+), followed by one year of preparatory (PREP) and finally a total of 12 years of Secondary and Senior Secondary Classes on the 10+2 pattern of instructions. At the end of 10 years in school, students appear for the All India Secondary School Examination – AISSE (class X) which is followed by the ALL India Senior Secondary Certificate Examination – AISSCE (class XII), both of which are conducted by the CBSE. Some DPS schools like DPS, Amritsar also offer pre-nursery programmes for ‘3 plus’ age group.</p>
+</div>
+
+<button class="accordion">Methodology of Teaching</button>
+<div class="panel">
+  <p><b>Teaching Methodology Class I to V</b>
+    Students follow a curriculum specially designed for them. In these formative years, students will learn to read, write and become numerate. All the students are placed in mixed ability classes where emphasis is on learning by doing. Every Monday, dictation and oral test schedule is followed diligently. Phonic skills are honed making them conscious of different sounds and stress patterns of English. Pronunciation, role-play, conversations further help in promoting communicative skills. No Formal Examination is held till class V.</p>
+<p><b>Teaching Methodology Classes VI to X</b>
+    During these years students will further consolidate and develop the skills that they have learnt in previous classes. For tracking progress, Monday test pattern is practiced where in students are tested every Monday on one core subject. Assignments further actuate the cognitive faculties of the learners by stimulating them to be more imaginative. Foreign Language - French is taught as an additional subject. 
+    Comprehensive curriculum plan is put in practice. Newspaper, magazines, reference books form major source of preparing assignments, consolidating students, communicative writing and analytical skills. Monday Tests continue to be mode of regular assessment. </p>
+<button class="accordion">School Rules</button>
+<div class="panel">
+  <p><b>School Rules</b>
+    <ol start="1">
+    <li>Every student must carry his/her almanac and identity card to school each day.</li>
+    <li>A student should affix his/her photograph and write the required information, duly signed by parents, in the space provided for in the almanac.
+    Students who come to school on their own should arrive at the school before the bell rings.</li>
+    <li>Students are not allowed to bring mobile phone to school. If they do so, it will be confiscated.</li>
+   <li> The morning bell is signal for all to go to the assembly or to their respective classrooms. This should be done promptly and in silence.
+    Changing of classrooms between periods should be done in an orderly manner and silently.</li>
+    Students should be habitually clean and always neatly dressed. The school uniform should be worn on all working days and for all school functions. Students who are slovenly dressed or not in uniform will be sent home.
+    All boys (except Sikhs) must keep their hair short. Girls must tie their hair neatly with a green band.
+    Non-Sikh boys should get their hair cut at regular intervals. Sikh boys must wear turbans in class IX and above. A patka may be worn only while playing games.
+    Care must be taken of all school property. No student should damage any school furniture, write or draw anything on the walls. Damage done should be reported at once to the class teacher. Recovery for any damage will be made from the concerned students.
+    No books (other than text books or library books), magazines or papers should be brought to the school.
+    Lending or borrowing of money or other articles is prohibited.
+    The school is not responsible for goods. It is not advisable to bring valuable articles (like expensive watches, fountain-pens, items of jewellery) to school.
+    Students who come to school escorted should never leave before the escort arrives. In case of delay, they should report to the school office.
+    The School reserves the right to suspend students whose progress in studies is unsatisfactory or whose conduct is harmful to other students.
+    Parents and guardians of all students should contact the teachers on PTA days to note the progress of their wards.
+    Parents and guardians must not visit their wards or teachers without prior permission of the Principal.
+    Students should get their Report Cards signed by their parents/guardians within two days of receipt of Report Cards.
+    The name, class and section of the pupil should be clearly marked on all the belongings of the students. Water bottles, blazer and jerseys should also bear the name of the student.
+    The school insists on the following measures to be observed by the staff members and all students. Care must be taken to observe the “green rules” in order to maintain clean and green surroundings. That is, school premises should not be littered with disposable tumblers, papers or polythene bags. If polythene bags are brought to school, care should be taken not to dispose them off in the school grounds. Minimal use of polythene bags will be appreciated.
+    Do not spoil the plants or pluck flowers.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
